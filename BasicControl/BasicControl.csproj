@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Student.cs" />
     <Compile Include="frmMathBasic.cs">
       <SubType>Form</SubType>
     </Compile>

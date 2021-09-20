@@ -32,18 +32,18 @@ namespace BasicControl
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.rdbKhac = new System.Windows.Forms.RadioButton();
+            this.rdbNu = new System.Windows.Forms.RadioButton();
+            this.rdbNam = new System.Windows.Forms.RadioButton();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.txtQueQuan = new System.Windows.Forms.TextBox();
+            this.txtNoiSinh = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -74,13 +74,13 @@ namespace BasicControl
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.rdbKhac);
+            this.groupBox1.Controls.Add(this.rdbNu);
+            this.groupBox1.Controls.Add(this.rdbNam);
+            this.groupBox1.Controls.Add(this.dtpNgaySinh);
+            this.groupBox1.Controls.Add(this.txtQueQuan);
+            this.groupBox1.Controls.Add(this.txtNoiSinh);
+            this.groupBox1.Controls.Add(this.txtHoTen);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -93,41 +93,68 @@ namespace BasicControl
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lý lịch trích ngang";
             // 
-            // label2
+            // rdbKhac
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 14);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Họ tên:";
+            this.rdbKhac.AutoSize = true;
+            this.rdbKhac.Location = new System.Drawing.Point(326, 115);
+            this.rdbKhac.Name = "rdbKhac";
+            this.rdbKhac.Size = new System.Drawing.Size(52, 18);
+            this.rdbKhac.TabIndex = 3;
+            this.rdbKhac.Text = "Khác";
+            this.rdbKhac.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // rdbNu
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 14);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Ngày sinh:";
+            this.rdbNu.AutoSize = true;
+            this.rdbNu.Location = new System.Drawing.Point(226, 115);
+            this.rdbNu.Name = "rdbNu";
+            this.rdbNu.Size = new System.Drawing.Size(40, 18);
+            this.rdbNu.TabIndex = 3;
+            this.rdbNu.Text = "Nữ";
+            this.rdbNu.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // rdbNam
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 14);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Nơi sinh:";
+            this.rdbNam.AutoSize = true;
+            this.rdbNam.Checked = true;
+            this.rdbNam.Location = new System.Drawing.Point(125, 115);
+            this.rdbNam.Name = "rdbNam";
+            this.rdbNam.Size = new System.Drawing.Size(51, 18);
+            this.rdbNam.TabIndex = 3;
+            this.rdbNam.TabStop = true;
+            this.rdbNam.Text = "Nam";
+            this.rdbNam.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // dtpNgaySinh
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 117);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 14);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Giới tính:";
+            this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(125, 61);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(141, 21);
+            this.dtpNgaySinh.TabIndex = 2;
+            // 
+            // txtQueQuan
+            // 
+            this.txtQueQuan.Location = new System.Drawing.Point(125, 139);
+            this.txtQueQuan.Multiline = true;
+            this.txtQueQuan.Name = "txtQueQuan";
+            this.txtQueQuan.Size = new System.Drawing.Size(306, 85);
+            this.txtQueQuan.TabIndex = 1;
+            // 
+            // txtNoiSinh
+            // 
+            this.txtNoiSinh.Location = new System.Drawing.Point(125, 88);
+            this.txtNoiSinh.Name = "txtNoiSinh";
+            this.txtNoiSinh.Size = new System.Drawing.Size(306, 21);
+            this.txtNoiSinh.TabIndex = 1;
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.Location = new System.Drawing.Point(125, 34);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(306, 21);
+            this.txtHoTen.TabIndex = 1;
             // 
             // label6
             // 
@@ -138,68 +165,41 @@ namespace BasicControl
             this.label6.TabIndex = 0;
             this.label6.Text = "Quê quán:";
             // 
-            // textBox1
+            // label5
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(306, 21);
-            this.textBox1.TabIndex = 1;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(40, 117);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 14);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Giới tính:";
             // 
-            // dateTimePicker1
+            // label4
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(125, 61);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(116, 21);
-            this.dateTimePicker1.TabIndex = 2;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(39, 91);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 14);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Nơi sinh:";
             // 
-            // textBox2
+            // label3
             // 
-            this.textBox2.Location = new System.Drawing.Point(125, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(306, 21);
-            this.textBox2.TabIndex = 1;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(39, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 14);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Ngày sinh:";
             // 
-            // radioButton1
+            // label2
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(125, 115);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(51, 18);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nam";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(226, 115);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(40, 18);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.Text = "Nữ";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(326, 115);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(52, 18);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.Text = "Khác";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(125, 139);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(306, 85);
-            this.textBox3.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(40, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 14);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Họ tên:";
             // 
             // frmUserInformation
             // 
@@ -226,13 +226,13 @@ namespace BasicControl
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton rdbKhac;
+        private System.Windows.Forms.RadioButton rdbNu;
+        private System.Windows.Forms.RadioButton rdbNam;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.TextBox txtQueQuan;
+        private System.Windows.Forms.TextBox txtNoiSinh;
+        private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
